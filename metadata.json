@@ -1,0 +1,6 @@
+{
+  "name": "اکبر قربانی | آکادمی تخصصی شنا",
+  "description": "وبسایت رسمی آکادمی تخصصی آموزش شنا و نجات‌غریق استاد اکبر قربانی",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
