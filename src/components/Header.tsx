@@ -1,3 +1,5 @@
+'use client';
+
 import { useState } from 'react';
 import { Waves, Menu, X, ArrowLeft } from 'lucide-react';
 
