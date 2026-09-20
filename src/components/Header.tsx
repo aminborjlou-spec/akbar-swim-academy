@@ -11,21 +11,20 @@ export default function Header({ onOpenBooking }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 px-3 sm:px-6 lg:px-8">
-      <nav className="max-w-7xl mx-auto ultra-glass rounded-2xl px-4 sm:px-6 py-3.5 flex justify-between items-center transition-all duration-300">
+    <header className="fixed top-2.5 sm:top-4 inset-x-0 z-50 px-2.5 sm:px-6 lg:px-8 w-full max-w-full pointer-events-none">
+      <nav className="max-w-7xl mx-auto ultra-glass rounded-2xl px-3 sm:px-6 py-2.5 sm:py-3.5 flex justify-between items-center transition-all duration-300 pointer-events-auto w-full">
         {/* Logo & Coach Name */}
-        <a href="#hero" className="flex items-center gap-3 group focus:outline-none">
-          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30 animate-glow transition-transform group-hover:scale-105">
-            <Waves className="w-6 h-6 text-black" />
+        <a href="#hero" className="flex items-center gap-2 sm:gap-3 group focus:outline-none shrink-0">
+          <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/30 animate-glow transition-transform group-hover:scale-105 shrink-0">
+            <Waves className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-right">
             <span
-              className="font-black text-xl sm:text-2xl tracking-wide text-white group-hover:text-cyan-300 transition-colors font-hasti"
-              style={{ fontFamily: "'Hasti', 'IRANHasti', 'Vazirmatn', sans-serif" }}
+              className="font-black text-lg sm:text-2xl tracking-normal text-white group-hover:text-cyan-300 transition-colors font-hasti leading-tight"
             >
               اکبر قربانی
             </span>
-            <span className="text-[10px] text-cyan-400 tracking-widest uppercase font-semibold">
+            <span className="text-[9px] sm:text-[10px] text-cyan-400 tracking-wider sm:tracking-widest uppercase font-semibold">
               PRO SWIM COACH
             </span>
           </div>
@@ -51,22 +50,23 @@ export default function Header({ onOpenBooking }: HeaderProps) {
         </div>
 
         {/* Action Button & Mobile Toggle */}
-        <div className="flex items-center gap-2.5 sm:gap-3">
+        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <button
             type="button"
             onClick={onOpenBooking}
             className="relative group overflow-hidden rounded-xl p-[2px] focus:outline-none cursor-pointer"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-600 rounded-xl animate-pulse"></span>
-            <span className="relative block px-4 sm:px-6 py-2 sm:py-2.5 rounded-[10px] bg-ocean-950 font-bold text-xs sm:text-sm text-cyan-300 group-hover:bg-transparent group-hover:text-black transition-all duration-300 whitespace-nowrap shadow-md">
-              رزرو سریع سانس
+            <span className="relative block px-3 sm:px-6 py-2 sm:py-2.5 rounded-[10px] bg-ocean-950 font-bold text-xs sm:text-sm text-cyan-300 group-hover:bg-transparent group-hover:text-black transition-all duration-300 whitespace-nowrap shadow-md">
+              <span className="hidden xs:inline">رزرو سریع سانس</span>
+              <span className="xs:hidden">رزرو سانس</span>
             </span>
           </button>
 
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex w-10 h-10 items-center justify-center rounded-xl bg-cyan-400/10 border border-cyan-400/25 text-cyan-300 hover:bg-cyan-400/20 transition-colors focus:outline-none"
+            className="md:hidden flex w-9 h-9 sm:w-10 sm:h-10 items-center justify-center rounded-xl bg-cyan-400/10 border border-cyan-400/25 text-cyan-300 hover:bg-cyan-400/20 transition-colors focus:outline-none shrink-0"
             aria-label="باز کردن منو"
             id="mobileMenuBtn"
           >
@@ -77,7 +77,7 @@ export default function Header({ onOpenBooking }: HeaderProps) {
 
       {/* Mobile Drawer Panel */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-2.5 ultra-glass rounded-2xl p-4 border border-cyan-400/25 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl">
+        <div className="md:hidden mt-2.5 ultra-glass rounded-2xl p-4 border border-cyan-400/25 animate-in fade-in slide-in-from-top-3 duration-200 shadow-2xl pointer-events-auto">
           <div className="flex flex-col text-right text-sm font-semibold text-gray-200 divide-y divide-white/5">
             <a
               href="#hero"

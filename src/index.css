@@ -1,3 +1,5 @@
+@import "vazirmatn/Vazirmatn-font-face.css";
+@import "@fontsource/lalezar/arabic.css";
 @import "tailwindcss";
 
 @theme {
@@ -11,22 +13,40 @@
   --color-gold-500: #fda085;
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  position: relative;
+  touch-action: pan-y;
+}
+
 body {
   font-family: 'Vazirmatn', system-ui, -apple-system, sans-serif;
   background-color: #010a15;
   color: #f3f4f6;
-  overflow-x: hidden;
 }
 
-/* Glassmorphism effects */
+/* Hasti Display Font Configuration */
 @font-face {
   font-family: 'Hasti';
-  src: local('Hasti'), local('Hasti-Regular'), local('IRANHasti'), local('فونت هستی');
+  src: url('./fonts/Hasti.woff2') format('woff2'),
+       url('./fonts/Hasti.woff') format('woff'),
+       url('./fonts/Hasti.ttf') format('truetype'),
+       url('/fonts/Hasti.woff2') format('woff2'),
+       url('/fonts/Hasti.ttf') format('truetype'),
+       local('Hasti'),
+       local('Hasti-Regular'),
+       local('IRANHasti'),
+       local('فونت هستی');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
 .font-hasti {
-  font-family: 'Hasti', 'IRANHasti', 'Vazirmatn', sans-serif;
+  font-family: 'Hasti', 'IRANHasti', 'Lalezar', 'Vazirmatn', sans-serif;
+  letter-spacing: -0.02em;
 }
 
 .ultra-glass {

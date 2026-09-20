@@ -78,16 +78,16 @@ export default function WaterBackground() {
   }, []);
 
   return (
-    <>
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 w-full h-full">
       <canvas
         id="waterCanvas"
         ref={canvasRef}
-        className="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-40"
+        className="absolute inset-0 w-full h-full opacity-40 pointer-events-none"
       />
-      {/* Glow orbs */}
-      <div className="glow-orb w-[420px] sm:w-[540px] h-[420px] sm:h-[540px] bg-cyan-500/20 top-[-80px] right-[-100px] animate-pulse-slow" />
-      <div className="glow-orb w-[460px] sm:w-[600px] h-[460px] sm:h-[600px] bg-blue-600/15 bottom-[25%] left-[-140px] animate-pulse-slow" />
-      <div className="glow-orb w-[300px] sm:w-[450px] h-[300px] sm:h-[450px] bg-teal-500/10 top-[40%] right-[-120px] animate-pulse-slow" />
-    </>
+      {/* Contained glow orbs */}
+      <div className="glow-orb w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-cyan-500/20 top-[-60px] -right-16 sm:-right-24 animate-pulse-slow" />
+      <div className="glow-orb w-[320px] sm:w-[540px] h-[320px] sm:h-[540px] bg-blue-600/15 bottom-[20%] -left-16 sm:-left-24 animate-pulse-slow" />
+      <div className="glow-orb w-[260px] sm:w-[420px] h-[260px] sm:h-[420px] bg-teal-500/10 top-[40%] -right-16 sm:-right-20 animate-pulse-slow" />
+    </div>
   );
 }

@@ -68,7 +68,7 @@ export default function Hero({ onOpenBooking }: HeroProps) {
               </div>
 
               <div className="my-5 sm:my-6">
-                <h3 className="text-2xl sm:text-3xl font-black text-white mb-1.5">اکبر قربانی</h3>
+                <h3 className="text-2xl sm:text-3xl font-black text-white mb-1.5 font-hasti">اکبر قربانی</h3>
                 <p className="text-cyan-400 font-medium text-xs sm:text-sm">
                   مدرس عالی فدراسیون و شناگر استقامت
                 </p>

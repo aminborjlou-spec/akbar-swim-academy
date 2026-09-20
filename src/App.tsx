@@ -27,7 +27,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen relative bg-[#010a15] text-[#f3f4f6] selection:bg-cyan-400 selection:text-black font-['Vazirmatn',sans-serif]">
+    <div className="min-h-screen relative w-full max-w-full overflow-x-hidden bg-[#010a15] text-[#f3f4f6] selection:bg-cyan-400 selection:text-black font-['Vazirmatn',sans-serif]">
       {/* Dynamic Water & Ambient Simulation Canvas */}
       <WaterBackground />
 
