@@ -1,3 +1,5 @@
+'use client';
+
 import { ShieldCheck, ArrowLeft, PhoneCall, Trophy } from 'lucide-react';
 
 interface HeroProps {

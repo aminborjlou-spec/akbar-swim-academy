@@ -1,3 +1,5 @@
+'use client';
+
 import { Phone, MessageCircle, Instagram, Send } from 'lucide-react';
 
 interface ContactProps {

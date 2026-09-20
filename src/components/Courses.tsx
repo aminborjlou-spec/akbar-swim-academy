@@ -1,3 +1,5 @@
+'use client';
+
 import { Sparkles, Zap, Shield, ArrowLeft } from 'lucide-react';
 
 interface CoursesProps {
