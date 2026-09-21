@@ -76,12 +76,12 @@ export default function Hero({ onOpenBooking }: HeroProps) {
 
               <div className="grid grid-cols-2 gap-3 pt-4 border-t border-white/10 text-center">
                 <div className="bg-ocean-900/60 p-3 rounded-xl border border-cyan-500/15">
-                  <span className="block text-2xl font-black text-cyan-300">+۱۰</span>
-                  <span className="text-[11px] text-gray-400 font-medium">سال تجربه</span>
+                  <span className="block text-2xl font-black text-cyan-300">۲۰+ سال</span>
+                  <span className="text-[11px] text-gray-400 font-medium">سابقه مربیگری</span>
                 </div>
                 <div className="bg-ocean-900/60 p-3 rounded-xl border border-cyan-500/15">
-                  <span className="block text-2xl font-black text-amber-300">+۵۰۰</span>
-                  <span className="text-[11px] text-gray-400 font-medium">شناگر آموزش‌دیده</span>
+                  <span className="block text-2xl font-black text-amber-300">+۲۰۰۰</span>
+                  <span className="text-[11px] text-gray-400 font-medium">شناگر و هنرجوی موفق</span>
                 </div>
               </div>
             </div>

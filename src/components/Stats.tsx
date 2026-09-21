@@ -5,15 +5,15 @@ export default function Stats() {
     {
       icon: Award,
       iconColor: 'text-amber-400',
-      value: '+۱۰ سال',
-      label: 'سابقه مربیگری حرفه‌ای',
+      value: '۲۰+ سال',
+      label: 'سال تجربه و سابقه مربیگری',
       neonClass: 'neon-text-gold',
     },
     {
       icon: Users,
       iconColor: 'text-cyan-400',
-      value: '+۵۰۰',
-      label: 'هنرجوی موفق',
+      value: '+۲۰۰۰',
+      label: 'شناگر آموزش‌دیده و هنرجوی موفق',
       neonClass: 'neon-text-cyan',
     },
     {

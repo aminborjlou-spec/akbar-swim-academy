@@ -26,7 +26,7 @@ export default function BookingModal({ isOpen, onClose, selectedCourse }: Bookin
     const message = encodeURIComponent(
       `درود بر استاد اکبر قربانی بزرگوار،\nدرخواست هماهنگی سانس شنا دارم:\n👤 نام: ${name}\n📱 شماره تماس: ${phone}\n🏊‍♂️ دوره انتخابی: ${course}\n⏰ زمان پیشنهادی: ${dayPreference}`
     );
-    window.open(`https://wa.me/989921742735?text=${message}`, '_blank');
+    window.open(`https://wa.me/989357520046?text=${message}`, '_blank');
     setSubmitted(true);
   };
 
@@ -60,7 +60,7 @@ export default function BookingModal({ isOpen, onClose, selectedCourse }: Bookin
             <h4 className="text-lg font-bold text-white">پیام شما به واتساپ هدایت شد!</h4>
             <p className="text-xs text-gray-300 leading-relaxed max-w-sm mx-auto">
               اطلاعات شما با موفقیت برای استاد اکبر قربانی فرستاده شد. جهت پاسخگویی سریع، چت واتساپ
-              را ادامه دهید یا در صورت نیاز با شماره ۰۹۹۲۱۷۴۲۷۳۵ تماس بگیرید.
+              را ادامه دهید یا در صورت نیاز با شماره ۰۹۳۵۷۵۲۰۰۴۶ تماس بگیرید.
             </p>
             <button
               type="button"

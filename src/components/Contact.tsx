@@ -24,7 +24,7 @@ export default function Contact({ onOpenBooking }: ContactProps) {
         {/* Action Buttons: Phone Call & WhatsApp */}
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-center items-center mb-10">
           <a
-            href="tel:09921742735"
+            href="tel:09357520046"
             className="w-full sm:w-auto ultra-glass px-6 sm:px-8 py-4 sm:py-5 rounded-2xl flex items-center justify-center gap-4 hover:border-cyan-400 transition-all text-white border border-cyan-500/30 group"
           >
             <Phone className="w-6 h-6 text-cyan-400 group-hover:scale-110 transition-transform" />
@@ -35,13 +35,13 @@ export default function Contact({ onOpenBooking }: ContactProps) {
                 style={{ direction: 'ltr', unicodeBidi: 'bidi-override' }}
                 className="font-black text-xl tracking-wider text-cyan-200 block font-mono"
               >
-                0992 174 2735
+                0935 752 0046
               </span>
             </div>
           </a>
 
           <a
-            href="https://wa.me/989921742735"
+            href="https://wa.me/989357520046"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white px-6 sm:px-8 py-4 sm:py-5 rounded-2xl flex items-center justify-center gap-3.5 transition-all font-bold text-base sm:text-lg shadow-xl shadow-emerald-600/30"
